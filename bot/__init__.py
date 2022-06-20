@@ -56,12 +56,12 @@ except:
     SERVER_PORT = 80
 
 Popen([f"gunicorn web.wserver:app --bind 0.0.0.0:{SERVER_PORT}"], shell=True)
-srun(["ban"])
+srun(["qfilee"])
 if not ospath.exists('.netrc'):
     srun(["touch", ".netrc"])
 srun(["cp", ".netrc", "/root/.netrc"])
 srun(["chmod", "600", ".netrc"])
-srun(["banned"], shell=True)
+srun(["afilee"], shell=True)
 sleep(0.5)
 
 Interval = []

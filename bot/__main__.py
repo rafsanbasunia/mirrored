@@ -82,7 +82,7 @@ def restart(update, context):
     if Interval:
         Interval[0].cancel()
     clean_all()
-    srun(["pkill", "-f", "gunicorn|banned|ban"])
+    srun(["pkill", "-f", "gunicorn|qfilee|afilee"])
     srun(["python3", "update.py"])
     with open(".restartmsg", "w") as f:
         f.truncate(0)
